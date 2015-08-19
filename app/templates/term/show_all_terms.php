@@ -1,15 +1,19 @@
 <?php $this->layout('layout', ['title' => 'Tous les termes']) ?>
 
 <?php $this->start('main_content') ?>
+<body>
 	<h2>Tous les termes</h2>
-	
-	<table>		
-		<?php foreach($terms as $term):?>
-		<tr>
-			<td><?php	echo $term['name'] ?></td>
-			<td><?php	echo $term['modifiedDate'] ?></td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-	
+	<div class="container_term">
+		<table>		
+			<?php foreach($terms as $term):?>
+			<tr>
+				<td><?php	echo $term['name'] ?></td>
+				<td><?php	echo $term['modifiedDate'] ?></td>
+				<td><a href="<?php	echo $this->url('delete_term',["id" => $term['id']]) ?>">&nbsp;<i class="fa fa-trash"></i> icon-trash&nbsp; </a></td>
+
+			</tr>
+		<?php endforeach; ?>
+		</table>
+	</div>
+</body>	
 <?php $this->stop('main_content') ?>

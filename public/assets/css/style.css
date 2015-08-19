@@ -1,0 +1,22 @@
+body{
+font-size:25px;
+background-color: black;
+color:white;
+}
+.container_term{
+
+}
+th{
+	border: solid 1px;
+	background-color:#eee;
+	color:black;
+}
+td{
+border: solid 1px;
+	background-color:#eee;
+	color:black;
+}
+tr{
+	border: solid 1px;
+	background-color:gray;
+}
