@@ -3,7 +3,11 @@
 <?php $this->start('main_content') ?>
 <body>
 	<h2>Tous les termes</h2>
-	<div class="container_term">
+	<h2><i class="fa fa-gift"> Mot du jour : </i>
+				<!--//<?php echo $wotd['name'] ?>&nbsp;&nbsp;<i class="fa fa-gift"></i></h2>-->
+				<a href="<?php echo $this->url('changewotd',["wotd" =>$wotd['name']])?>">&nbsp;&nbsp;<i class="fa fa-gift"></i></a>
+	<div class="container_term"></br>
+
 		<table>		
 			<?php foreach($terms as $term):?>
 			<tr>
