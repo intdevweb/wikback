@@ -1,9 +1,10 @@
-<?php $this->layout('layout', ['title' => 'authentification']) ?>
+
+<?php $this->layout('layout', ['title' => 'Tous les termes']) ?>
 
 <?php $this->start('main_content') ?>
-<h2>Ajouter un administrateur</h2>
+<h2>connexion</h2>
 <p>Veuillez renseigner ci-dessous les informations de 
-	connexion du nouvel administrateur</p>
+	connexion</p>
 <body>
 
 <form method="POST" novalidate>
@@ -25,5 +26,3 @@
 <div> <?= $error?></div>
 </form>
 <?php $this->stop('main_content') ?>
-
-

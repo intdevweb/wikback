@@ -1,6 +1,5 @@
-<?php $this->layout('layout', ['title' => 'Tous les termes']) ?>
+$this->redirectToRoute('show_all_terms');
 
-<?php $this->start('main_content') ?>
 <body>
 	<form method="POST">
 
